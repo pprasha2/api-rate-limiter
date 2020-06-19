@@ -1,0 +1,12 @@
+django
+djangorestframework
+flake8
+python-memcached
+
+
+
+
+
+
+
+
