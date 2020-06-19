@@ -3,7 +3,9 @@ services:
   app:
     build:
       context: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: >
+      sh -c "/usr/bin/memcached -d
+      && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./app:/app
     ports:

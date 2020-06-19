@@ -12,4 +12,6 @@ RUN mkdir -p /vol/web/static
 RUN adduser -D user
 RUN chown -R user:user /vol/
 RUN chmod -R 755  /vol/web
+USER root
+RUN apk add memcached
 USER user
